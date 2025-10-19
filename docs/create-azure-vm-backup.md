@@ -29,7 +29,7 @@ It complements the earlier “Create Azure VM using CLI” case study in this re
 
 ---
 
-### 📸 Screenshot — Create Backup Vault in Azure Portal
+### Screenshot — Create Backup Vault in Azure Portal
 The screenshot below demonstrates how to **create the backup vault** in the Azure Portal.
 
 ![Create Backup Vault in Azure Portal](../images/12.Create-Backup.png)
@@ -139,7 +139,13 @@ az backup job list \
   --vault-name "$VAULT" \
   --query "[0].{Operation:operation, Status:status, Start:startTime, End:endTime}" -o table
 
-log "✅ Backup completed successfully!"
+log " Backup completed successfully!"
 echo
 echo "You can verify in the Azure Portal under:"
 echo "Recovery Services vaults → $VAULT → Backup items → Azure Virtual Machine → $VMNAME"
+```
+### Screenshot — Verify Backup Status
+The screenshot below confirms the **backup vault** and **backup job creation** were successful.
+
+![Verify Backup Vault and Backup Job](../images/13.Verify-Deployment-in-the-Azure-Portal.png)
+

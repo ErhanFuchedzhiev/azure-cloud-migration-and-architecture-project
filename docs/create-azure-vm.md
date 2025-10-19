@@ -46,8 +46,8 @@ Fill out the fields as follows:
 > ⚠️ **Note:** Opening RDP (3389) to all IP addresses is suitable for testing only.  
 > In production, restrict access using known IPs or a VPN.
 
-![Configure Basic Settings](images/2.Create%20VM.png)
-![Inbound Ports Configuration](images/3.Next%20Step.png)
+![Configure Basic Settings](../images/2.Create%20VM.png)
+![Inbound Ports Configuration](../images/3.Next%20Step.png)
 
 ---
 
@@ -60,7 +60,7 @@ In the **Disks** tab:
 
 > The VM uses a 127 GiB OS disk. Ultra Disk and host encryption are optional and not required for this exercise.
 
-![Configure Disks](images/4.Disks.png)
+![Configure Disks](../images/4.Disks.png)
 
 ---
 
@@ -78,7 +78,7 @@ Under **Networking**, configure:
 
 > Keep “Load balancing” set to **None** unless you are creating multiple VMs behind a load balancer.
 
-![Configure Networking](images/5.Networking.png)
+![Configure Networking](../images/5.Networking.png)
 
 ---
 
@@ -97,7 +97,7 @@ In the **Management** tab:
 
 > Enabling auto-shutdown helps avoid unnecessary charges when the VM is not in use.
 
-![Configure Management](images/6.Management.png)
+![Configure Management](../images/6.Management.png)
 
 ---
 
@@ -112,7 +112,7 @@ In the **Monitoring** tab:
 
 > Boot diagnostics capture screenshots and logs to assist with troubleshooting.
 
-![Configure Monitoring](images/7.Monitoring.png)
+![Configure Monitoring](../images/7.Monitoring.png)
 
 ---
 
@@ -123,8 +123,8 @@ Ensure you see the message:
 
 Then click **Create** to deploy the virtual machine.
 
-![Review and Create - Validation Passed](images/8.Create.png)
-![Validation Summary](images/9.Create.png)
+![Review and Create - Validation Passed](../images/8.Create.png)
+![Validation Summary](../images/9.Create.png)
 
 ---
 
@@ -139,7 +139,7 @@ Once the deployment is complete, Azure automatically creates:
 
 All resources are visible under the same resource group.
 
-![Deployment Completed](images/10.Created.png)
+![Deployment Completed](../images/10.Created.png)
 
 ---
 

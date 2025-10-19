@@ -21,7 +21,8 @@ From the Azure Portal home screen:
 
 This opens the *Create a virtual machine* wizard.
 
-![Create a VM - Basics Tab](images/1.Create%20VM.png)
+![Create a VM - Basics Tab](../images/1.Create%20VM.png)
+
 
 ---
 

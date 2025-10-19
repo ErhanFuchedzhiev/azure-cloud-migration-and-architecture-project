@@ -80,7 +80,7 @@ echo "Username:    $ADMIN"
 echo "Public IP:   $PUBLIC_IP"
 echo "RDP:         ${PUBLIC_IP}:3389 (allowed from ${SRC_PREFIX})"
 echo "========================================================"
-'''
+```
 
 ## Outcome
 You have successfully **created and configured a Windows Server 2022 Virtual Machine using Azure CLI**.  

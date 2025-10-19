@@ -20,6 +20,7 @@ It serves as an alternative method to deploying via the Azure Portal, forming pa
 2. Click the **Cloud Shell** icon in the top navigation bar.  
 3. Select **Bash** as your environment.
 
+![Verify Deployment in the Azure Portal](../images/11.Verify-Deployment-in-the-Azure-Portal.png)
 ---
 
 ### Step 2 — Create and Run the Script

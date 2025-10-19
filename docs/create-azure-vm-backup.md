@@ -147,6 +147,6 @@ echo "Recovery Services vaults → $VAULT → Backup items → Azure Virtual Mac
 ### Screenshot — Verify Backup Status
 The screenshot below confirms the **backup vault** and **backup job creation** were successful.
 
-![Verify Backup Vault and Backup Job](../images/13.Verify-Deployment-in-the-Azure-Portal.png)
 
+](https://github.com/ErhanFuchedzhiev/azure-vm-migration-case-study/blob/main/images/13.Verify-Deployment-in-the-Azure-Portal.png)
 

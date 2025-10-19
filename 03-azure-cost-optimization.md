@@ -38,8 +38,10 @@ The **Auto-shutdown feature** was enabled in the Management tab:
 > Automatically shutting down low-usage VMs prevents unnecessary billing during off-peak hours.
 
 CLI Example:
+
 ```bash
 az vm auto-shutdown --resource-group vm-cli-rg --name vm-cli-01 --time 1900
+```
 
 ## 4. Monitoring & Cost Visibility
 To ensure ongoing cost governance:

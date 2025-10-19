@@ -27,14 +27,12 @@ It complements the earlier “Create Azure VM using CLI” case study in this re
 3. Enable system identity and leave other settings default.  
 4. Click **Review + Create** → **Create**.
 
-Once created, open the vault to verify that it appears as below.
-
 ---
 
-## Verification Screenshot
-The screenshot below confirms the **successful creation of the backup vault** (`vm-backup-vault`) in the Azure Portal.
+### 📸 Screenshot — Create Backup Vault in Azure Portal
+The screenshot below demonstrates how to **create the backup vault** in the Azure Portal.
 
-![Backup Vault Verification](../images/12.Create-Backup.png)
+![Create Backup Vault in Azure Portal](../images/12.Create-Backup.png)
 
 ---
 
@@ -145,4 +143,3 @@ log "✅ Backup completed successfully!"
 echo
 echo "You can verify in the Azure Portal under:"
 echo "Recovery Services vaults → $VAULT → Backup items → Azure Virtual Machine → $VMNAME"
-```

@@ -149,3 +149,4 @@ The screenshot below confirms the **backup vault** and **backup job creation** w
 
 ![Verify Backup Vault and Backup Job](../images/13.Verify-Deployment-in-the-Azure-Portal.png)
 
+

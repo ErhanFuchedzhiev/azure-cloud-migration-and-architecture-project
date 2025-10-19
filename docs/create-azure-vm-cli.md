@@ -90,7 +90,7 @@ This approach demonstrates automation and scripting best practices, complementin
 ## Verification Screenshot
 The screenshot below shows the **deployed VM (vm-cli-01)** in the Azure Portal, confirming a successful deployment.
 
-![Verify Deployment in the Azure Portal](../images/11.Verify%20Deployment%20in%20the%20Azure%20Portal.png)
+![Verify Deployment in the Azure Portal](../images/11-verify-deployment-azure-portal.png)
 
 ---
 

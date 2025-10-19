@@ -1,17 +1,19 @@
 # Module 1: Introduction to Azure Virtual Machines
 
-This module introduces the concept of **Azure Virtual Machines (VMs)** and how they can help organizations modernize and scale their infrastructure.
+This module introduces the concept of **Azure Virtual Machines (VMs)** and how they can help organizations migrate to the cloud and scale their infrastructure.
 
-In this case study, a global medical research company is facing challenges with aging on-premises servers, global distribution, and rapidly growing data workloads. Transitioning to Azure Virtual Machines provides flexibility, scalability, and centralized management, enabling the organization to improve performance and operational efficiency.
+In this case study, a global medical research company is facing challenges with aging on-premises servers, global distribution, and rapidly growing data workloads. Transitioning to Azure Virtual Machines provides flexibility, scalability, and simplified management, enabling the organization to improve performance and operational efficiency.
 
 ---
 
-## Learning Objectives
+## What I Can Do
 
-By the end of this module, you will be able to:
-- Explain what Azure Virtual Machines are and where they fit in the Azure ecosystem.
-- Describe the benefits of Azure VMs compared to on-premises servers.
-- Identify key scenarios where Azure VMs provide value, such as migrations, testing, and hybrid workloads.
+From my experience as an Azure and Microsoft infrastructure specialist, I can:
+- Design and deploy Azure Virtual Machines efficiently and securely.  
+- Plan and execute on-premises workload migrations to Azure.  
+- Configure networking, storage, and backup for VMs.  
+- Monitor and optimize performance using Azure Monitor and Update Management.  
+- Document and share cloud solutions through technical case studies.
 
 ---
 

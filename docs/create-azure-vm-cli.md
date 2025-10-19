@@ -20,7 +20,6 @@ It serves as an alternative method to deploying via the Azure Portal, forming pa
 2. Click the **Cloud Shell** icon in the top navigation bar.  
 3. Select **Bash** as your environment.
 
-![Verify Deployment in the Azure Portal](../images/11.Verify-Deployment-in-the-Azure-Portal.png)
 ---
 
 ### Step 2 — Create and Run the Script
@@ -81,6 +80,7 @@ echo "Username:    $ADMIN"
 echo "Public IP:   $PUBLIC_IP"
 echo "RDP:         ${PUBLIC_IP}:3389 (allowed from ${SRC_PREFIX})"
 echo "========================================================"
+'''
 
 ## Outcome
 You have successfully **created and configured a Windows Server 2022 Virtual Machine using Azure CLI**.  

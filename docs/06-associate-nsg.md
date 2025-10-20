@@ -1,7 +1,7 @@
 # Associate Network Security Group (NSG) with Virtual Machine
 
 ## Objective
-In this section, you will create a Network Security Group (NSG), configure inbound RDP access, associate it with the virtual machine’s network interface (NIC), and verify the applied rules.
+In this section, I will create a Network Security Group (NSG), configure inbound RDP access, associate it with the virtual machine’s network interface (NIC), and verify the applied rules.
 
 ---
 

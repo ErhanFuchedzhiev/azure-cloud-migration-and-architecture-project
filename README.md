@@ -11,7 +11,7 @@ Virtual Network & Subnet – Custom network setup for private addressing.
 
 NSG & Firewall Rules – Manage inbound and outbound traffic securely.
 
-RDP Access – Only your public IP is allowed for remote desktop login.
+RDP Access – Only my public IP is allowed for remote desktop login.
 
 NIC Association – Attach the NSG to your VM’s network interface.
 

@@ -36,7 +36,7 @@ This is part of the cloud governance story for the vm-cli-rg resource group used
 
 ## Bicep: Policy Definition (subscription scope)
 
-File: `scripts/policy-definition.bicep`
+File: `scripts/07-policy-definition.bicep`
 
 ```bicep
 targetScope = 'subscription'
@@ -92,7 +92,7 @@ Evidence: successful deployment output from az deployment sub create
 
 ## Bicep: Policy Assignment (resource group scope)
 
-File: scripts/policy-assignment.bicep
+File: `scripts/08-policy-assignment.bicep`
 
 ```bicep
 targetScope = 'resourceGroup'

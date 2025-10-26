@@ -36,8 +36,8 @@ Result:
 - Location: westeurope
 - Workspace created with a unique name for global uniqueness.
 
-![Validation Passed](../images/42.Create-the-recource-group.png.png)
-![Validation Passed](../images/43.rg-azure-monitor-create.png.png)
+![Validation Passed](../images/42.Create-the-recource-group.png)
+![Validation Passed](../images/43.rg-azure-monitor-create.png)
 ![Validation Passed](../images/47.verify-log-analytics-workspace-azure-portal.png)
 
 ## 2️.Attempt to connect VM diagnostics to LAW (Expected to FAIL)
@@ -63,7 +63,7 @@ Result:
 The command fails with a Policy Deny error because the required tag (e.g., Environment) is missing on the target resource.
 This is an intentional block caused by the tag enforcement policy applied at the vm-cli-rg scope.
 
-![Validation Passed](../images/44.vm-diagnostics-connect.png.png)
+![Validation Passed](../images/44.vm-diagnostics-connect.png)
 ![Validation Passed](../images/48.verify-vm-diagnostic-settings.png)
 
 ## 3️.Verify Policy Enforcement
@@ -80,7 +80,7 @@ Observation:
 The “Enforce tagging policy (vm-cli-rg)” prevents creation of diagnostic settings without the required tags.
 This is an excellent example of how Azure Policy enforces compliance automatically.
 
-![Validation Passed](../images/45.policy-block-evidence.png.png)
+![Validation Passed](../images/45.policy-block-evidence.png)
 ![Validation Passed](../images/49.verify-policy-enforcement.png)
 
 ## 4️.Create a CPU Alert Rule
@@ -105,5 +105,5 @@ Result:
 
 This alert will trigger whenever the VM’s CPU utilization crosses the defined threshold.
 
-![Validation Passed](../images/46.create-cpu-alert.png.png)
+![Validation Passed](../images/46.create-cpu-alert.png)
 ![Validation Passed](../images/50.verify-vm-alert-rule.png)

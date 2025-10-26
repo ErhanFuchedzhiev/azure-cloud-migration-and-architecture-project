@@ -315,7 +315,7 @@ az container list --resource-group $RG --output table
 
 This confirmed that the deployment was successful and visible through both the Azure CLI and the Azure Portal interface.
 
-23. View the running app in a browser
+## 23. View the running app in a browser
 
 Finally, I accessed the containerized Flask application using its public Azure DNS address returned from the deployment output.
 

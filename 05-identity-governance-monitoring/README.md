@@ -1,4 +1,4 @@
-# 05. Identity, Governance & Monitoring
+05. Identity, Governance & Monitoring
 
 ## Overview
 This section consolidates the governance and monitoring configuration created throughout the migration case study.  

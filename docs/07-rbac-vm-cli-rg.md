@@ -2,7 +2,7 @@
 
 ## Objective
 
-In this step, we configure **Azure Role-Based Access Control (RBAC)** to implement a **least-privilege model**.  
+In this step, I configure **Azure Role-Based Access Control (RBAC)** to implement a **least-privilege model**.  
 Each department (HR, Management, and Staff) will get access appropriate to their responsibilities.
 
 I will:

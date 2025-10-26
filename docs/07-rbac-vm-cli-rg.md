@@ -14,7 +14,7 @@ I will:
 
 ## 1. List existing resource groups
 
-We start by confirming the resource groups that exist in the subscription.
+I start by confirming the resource groups that exist in the subscription.
 
 ```bash
 az group list -o table

@@ -37,7 +37,7 @@ az ad group list -o table
 
 ## 3. Assign RBAC roles
 
-We assign each group the correct Azure built-in role at the proper scope.
+I assign each group the correct Azure built-in role at the proper scope.
 
 ## 3.1 HR Department – Contributor on vm-cli-rg
 

@@ -1,8 +1,9 @@
 # Exercise: Create a Virtual Machine (Azure Portal)
 
 ## Objective
-The goal of this exercise is to demonstrate how to **create and configure a Windows Server Virtual Machine** using the Azure Portal.  
-This forms part of the UK Research Company’s cloud migration case study.
+This exercise is part of the **Plan and Create Infrastructure** phase.  
+It demonstrates manual deployment of a baseline virtual machine before automating infrastructure creation with Azure CLI and Bicep in subsequent exercises.
+
 
 ---
 

@@ -1,40 +1,61 @@
-# Module 1: Introduction to Azure Virtual Machines
+# Module 1: Azure Infrastructure, Migration, and Architecture Design
 
-This module introduces the concept of **Azure Virtual Machines (VMs)** and how they can help organizations migrate to the cloud and scale their infrastructure.
-
-In this case study, a global medical research company is facing challenges with aging on-premises servers, global distribution, and rapidly growing data workloads. Transitioning to Azure Virtual Machines provides flexibility, scalability, and simplified management, enabling the organization to improve performance and operational efficiency.
-
----
-
-## What I Can Do
-
-From my experience as an Azure and Microsoft infrastructure specialist, I can:
-- Design and deploy Azure Virtual Machines efficiently and securely.  
-- Plan and execute on-premises workload migrations to Azure.  
-- Configure networking, storage, and backup for VMs.  
-- Monitor and optimize performance using Azure Monitor and Update Management.  
-- Document and share cloud solutions through technical case studies.
-
----
-
-## Key Topics
-
-1. **What are Azure Virtual Machines?**  
-   Azure VMs are on-demand, scalable computing resources in Azure that allow you to run Windows or Linux virtualized environments without maintaining physical hardware.
-
-2. **Why Azure VMs?**  
-   - Simplified management and scalability  
-   - Centralized monitoring and security  
-   - Integration with Azure services like **Monitor**, **Defender for Cloud**, and **Update Management**
-
-3. **Common Scenarios**  
-   - Migrating on-premises workloads  
-   - Testing and validation of multi-OS environments  
-   - Running critical applications requiring full OS control
-
----
-
-📸 You can find related screenshots and architecture diagrams in the [images](../images) folder.
+## 1.In this project, I design and implement a complete Azure cloud architecture for a global medical research company that is migrating from on-premises infrastructure to Microsoft Azure.
+My goal is to demonstrate how I approach real-world cloud architecture — from planning and governance to migration, cost optimization, security, and automation.
+Through this case study, I showcase my ability to design, build, and document end-to-end Azure solutions using industry best practices and multiple tools, including Azure CLI, PowerShell, Bash, Bicep, and Python.
 
 
+## 2.Project Scope and Structure
 
+This project covers the entire lifecycle of designing and migrating an environment into Azure:
+
+1.Plan and Create Virtual Machines
+I planned the migration of on-premises servers and created Azure Virtual Machines configured for secure remote access, availability, and performance.
+
+2.Azure Cost Optimization
+I optimized VM sizing, applied Azure Hybrid Benefit, enabled auto-shutdown, and implemented budget and alert policies to control spend.
+
+3.Networking Overview
+I built a network design with Virtual Networks (VNets), subnets, and Network Security Groups (NSGs) that restrict access to trusted sources. I verified security using effective NSG rules and automation scripts.
+
+4.Identity, Governance, and Monitoring
+I enforced access control through RBAC, Azure Policy, and resource tagging. I integrated Azure Monitor, Log Analytics, and Defender for Cloud to centralize monitoring and strengthen security posture.
+
+5.Data Platform, Integration, and Application Services
+I deployed a SQL Server instance, implemented backup and recovery, and experimented with event-driven integration using Azure Event Grid. I also containerized selected components using Docker for modularity and scalability.
+
+6.Automation and Scripting
+I automated many configuration steps with PowerShell, Azure CLI, Bash, and Bicep templates, ensuring my environment could be rebuilt quickly and reliably.
+
+## 3.Repository Structure
+| Module                                                    | Description                                               |
+| --------------------------------------------------------- | --------------------------------------------------------- |
+| **01-introduction**                                       | Overview of the project and objectives                    |
+| **02-plan-and-create-vms**                                | VM planning, configuration, and deployment                |
+| **03-azure-cost-optimization**                            | Cost control strategies and automation                    |
+| **04-networking-overview**                                | VNet, subnet, and NSG configuration                       |
+| **05-identity-governance-monitoring**                     | RBAC, policies, tagging, and monitoring                   |
+| **06-data-platform-integration-and-application-overview** | SQL Server, Docker, Event Grid, and integration           |
+| **/docs**                                                 | Supporting documentation and diagrams                     |
+| **/images**                                               | Screenshots and architecture visuals                      |
+| **/scripts**                                              | Automation scripts (Bash, PowerShell, Bicep, CLI, Python) |
+
+## 4.Skills and Tools I Use
+
+- Cloud Architecture: Azure landing zones, hybrid migration, governance
+- Networking: VNet, Subnet, NSG, Bastion, IP restrictions
+- Security & Governance: RBAC, Azure Policy, tagging, Defender for Cloud
+- Cost Optimization: Azure Hybrid Benefit, auto-shutdown, budgets & alerts
+- Data Platform: SQL Server in Azure, backup and recovery, Event Grid integration
+- Automation: PowerShell, Bash, Azure CLI, Python, Bicep
+- Containers: Docker for lightweight app deployments and testing
+- Monitoring: Azure Monitor, Log Analytics, custom alerts
+
+## 5.Learning Outcome
+
+By completing this project, I demonstrate my ability to:
+
+- Translate business needs into cloud architecture.
+- Design secure, cost-effective, and governed Azure environments.
+- Automate deployments for consistency and scalability.
+- Deliver clear documentation and visual architecture like a real-world Azure Architect.

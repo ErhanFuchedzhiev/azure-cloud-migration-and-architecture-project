@@ -11,7 +11,7 @@ It covers **containers**, **managed databases**, **event-driven messaging**, and
 The data platform, integration, and application layer enable:
 - **Scalable compute** using containerization or App Service (Azure Container Instances / AKS / Web App for Linux)
 - **Managed persistence** through Azure Database for PostgreSQL (private endpoint + Key Vault)
-- **Decoupled data flow** with Event Grid–based messaging and hybrid connectivity
+- **Event-Driven data flow** with Event Grid–based messaging and hybrid connectivity
 - **Application observability** through Application Insights and Azure Monitor
 - **Governed access** with consistent security and networking across all layers
 

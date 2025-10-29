@@ -15,5 +15,5 @@ This checklist reflects modern Azure architecture practices and helps validate e
 
 ---
 
-With the pre-creation checklist complete, I proceed to deploy and validate Azure Virtual Machines using automated methods such as **Azure CLI**, **Bicep templates**, and **PowerShell scripts**, ensuring consistent, secure, and repeatable infrastructure provisioning.
+With the pre-creation checklist complete, I proceed to deploy and validate Azure infrastructure using automated methods such as **Azure CLI**, **Bicep templates**, and **PowerShell scripts**, ensuring consistent, secure, and repeatable provisioning across environments.
 

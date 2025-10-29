@@ -1,4 +1,4 @@
-# Containerization and Azure PaaS Deployment
+# 10 - Containerization and Azure PaaS Deployment
 
 ## Overview
 In this part of my case study, I show how I built, containerized, and deployed a simple web application to **Azure Container Instances (ACI)** using **Azure Container Registry (ACR)** as the private image source.

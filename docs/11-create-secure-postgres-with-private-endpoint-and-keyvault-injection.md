@@ -48,8 +48,6 @@ To avoid hardcoding connection strings, the application retrieves its credential
 [`16-setup-keyvault-and-secret.sh`](../scripts/16-setup-keyvault-and-secret.sh)
 
 **Screenshot references:**  
-- ![Validation Passed](../images/75-create-keyvault.png)  
-- ![Validation Passed](../images/76-store-dbconnectionstring.png)
 - ![Validation Passed](../images/77.create-key-vault.png)  
 - ![Validation Passed](../images/76.verify-connection-string-azure-key-vault.png)
 - ![Validation Passed](../images/78.verify-azure-key-vault-in-azure.png)
@@ -107,8 +105,8 @@ Instead of embedding credentials in code, the container retrieves the database c
 [`19-inject-secret-from-keyvault-into-container.sh`](../scripts/19-inject-secret-from-keyvault-into-container.sh)
 
 **Screenshot references:**  
-- ![Validation Passed](../images/84.inject-the-secret-key-vault-into-container.png)  
-- ![Validation Passed](../images/82-container-env-vars.png)  
+- ![Validation Passed](../images/82.push-the-image-to-azure-container-registry.png)  
+- ![Validation Passed](../images/84.inject-the-secret-key vault-into-container.png)  
 
 Key command used:
 ```bash

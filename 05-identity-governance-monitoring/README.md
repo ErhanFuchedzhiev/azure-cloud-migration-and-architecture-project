@@ -10,9 +10,10 @@ It aligns with **Microsoft AZ-305 (Design Identity, Governance, and Monitoring S
 
 | Area | Description | Artifacts / Examples |
 |------|--------------|----------------------|
-| **RBAC (Identity)** | Implemented least-privilege access through built-in roles and resource-level scoping. | [`11-az305-alignment/.../rbac-minimums.md`](../docs/07-rbac-vm-cli-rg.md) |
+| **RBAC (Identity)** | Implemented least-privilege access through built-in roles and resource-level scoping. | [`07-rbac-vm-cli-rg.md`](../docs/07-rbac-vm-cli-rg.md) |
 | **Azure Policy (Governance)** | Enforced tagging standards and denied creation of non-compliant resources (e.g., missing “Environment” tag). | [`08-policy-enforcement-tag-requirement.md`](../docs/08-policy-enforcement-tag-requirement.md) |
 | **Monitoring & Alerts** | Centralized monitoring via Log Analytics Workspace and CPU alert rules for VMs. | [`09-monitoring-and-alerts.md`](../docs/09-monitoring-and-alerts.md) |
+
 
 ---
 

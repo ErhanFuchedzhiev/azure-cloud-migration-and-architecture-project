@@ -85,7 +85,7 @@ Now we deploy it as a container instance that connects to the PostgreSQL server.
 [`18-deploy-db-backed-container.sh`](../scripts/18-deploy-db-backed-container.sh)
 
 **Screenshot references:**  
-- ![Validation Passed](../images/83-container-logs-flask.png)
+- ![Validation Passed](../images/83.verify-image-created-docker.png)
 - ![Validation Passed](../images/85.verify-IP-browser.png)  
 
 This script:
@@ -106,7 +106,7 @@ Instead of embedding credentials in code, the container retrieves the database c
 
 **Screenshot references:**  
 - ![Validation Passed](../images/82.push-the-image-to-azure-container-registry.png)  
-- ![Validation Passed](../images/84.inject-the-secret-key vault-into-container.png)  
+- ![Validation Passed](../images/84.inject-the-secret-key-vault-into-container.png)    
 
 Key command used:
 ```bash

@@ -1,13 +1,16 @@
-# Exercise: Create a Virtual Machine using Azure CLI
+# 02 – Create a Virtual Machine (Azure CLI)
 
 ## Objective
 This exercise demonstrates how to **create and configure a Windows Server 2022 Virtual Machine using Azure CLI**.  
-It serves as an alternative method to deploying via the Azure Portal, forming part of the Research Company’s Azure migration case study.
+It serves as an alternative to deploying via the Azure Portal, forming part of the Research Company’s Azure migration case study.
+
+This exercise is part of the **Plan and Create Infrastructure** phase.  
+It demonstrates how to deploy a virtual machine using Azure CLI — an automated alternative to the Azure Portal method covered in the previous exercise.
 
 ---
 
 ## Prerequisites
-- Active [Azure free trial](https://azure.microsoft.com/free/)
+- Active [Azure Free Trial](https://azure.microsoft.com/free/)  
 - Access to the [Azure Cloud Shell](https://shell.azure.com) or Azure CLI installed locally  
 - Basic understanding of networking and resource groups in Azure  
 
@@ -23,6 +26,14 @@ It serves as an alternative method to deploying via the Azure Portal, forming pa
 ---
 
 ### Step 2 — Create and Run the Script
+
+The following script automates the end-to-end deployment of a Windows Server 2022 VM,  
+including creation of the resource group, virtual network, network security group, public IP, and VM instance.
+
+> [!WARNING]  
+> The script opens port **3389 (RDP)** to your public IP for administrative access.  
+> For production environments, restrict access through a VPN or Azure Bastion.
+
 Create a new file named **`create-azure-vm-cli.sh`** and paste the following code:
 
 ```bash
@@ -80,29 +91,3 @@ echo "Username:    $ADMIN"
 echo "Public IP:   $PUBLIC_IP"
 echo "RDP:         ${PUBLIC_IP}:3389 (allowed from ${SRC_PREFIX})"
 echo "========================================================"
-```
-
-## Outcome
-You have successfully **created and configured a Windows Server 2022 Virtual Machine using Azure CLI**.  
-This approach demonstrates automation and scripting best practices, complementing the Azure Portal-based deployment.
-
----
-
-## Verification Screenshot
-The screenshot below shows the **deployed VM (vm-cli-01)** in the Azure Portal, confirming a successful deployment.
-
-![Verify Deployment in the Azure Portal](../images/11.Verify-Deployment-in-the-Azure-Portal.png)
-
----
-
-## Comparison: Azure Portal vs Azure CLI
-
-| Feature | Azure Portal | Azure CLI |
-|----------|---------------|-----------|
-| Ease of use | GUI-based, beginner-friendly | Command-line, ideal for automation |
-| Speed | Manual configuration | Faster, scriptable |
-| Repeatability | Limited | Easily repeatable |
-| Ideal for | Learning, small deployments | Automation, DevOps, CI/CD |
-
-
-

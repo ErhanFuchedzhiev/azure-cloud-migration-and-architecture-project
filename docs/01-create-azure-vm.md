@@ -1,4 +1,4 @@
-# Exercise: Create a Virtual Machine using the Azure Portal
+# Exercise: Create a Virtual Machine (Azure Portal)
 
 ## Objective
 The goal of this exercise is to demonstrate how to **create and configure a Windows Server Virtual Machine** using the Azure Portal.  

@@ -33,7 +33,7 @@ The PostgreSQL Flexible Server provides a fully managed, scalable relational dat
 [`15-create-postgres-flexibleserver.sh`](../scripts/15-create-postgres-flexibleserver.sh)
 
 **Screenshot reference:**  
-![Create PostgreSQL Flexible Server](../images/74-create-postgres-flexibleserver.png)
+![Validation Passed](../images/74-create-postgres-flexibleserver.png)
 
 This script provisions the PostgreSQL server with admin credentials, a demo database, and basic network configuration.
 
@@ -47,8 +47,8 @@ To avoid hardcoding connection strings, the application retrieves its credential
 [`16-setup-keyvault-and-secret.sh`](../scripts/16-setup-keyvault-and-secret.sh)
 
 **Screenshot references:**  
-- ![Create Key Vault](../images/75-create-keyvault.png)  
-- ![Store DB Connection String Secret](../images/76-store-dbconnectionstring.png)
+- ![Validation Passed](../images/75-create-keyvault.png)  
+- ![Validation Passed](../images/76-store-dbconnectionstring.png)
 
 The script performs:
 1. Creation of a Key Vault resource  
@@ -65,8 +65,8 @@ The database is configured to **allow access only from trusted Azure resources**
 [`17-secure-postgres-network.sh`](../scripts/17-secure-postgres-network.sh)
 
 **Screenshot references:**  
-- ![Disable public access](../images/77-disable-public-access.png)  
-- ![Private Endpoint setup](../images/78-create-private-endpoint.png)
+- ![Validation Passed](../images/77-disable-public-access.png)  
+- ![Validation Passed](../images/78-create-private-endpoint.png)
 
 This step ensures that the database cannot be accessed publicly and that only the containerized app inside Azure can communicate with it.
 
@@ -81,8 +81,8 @@ Now we deploy it as a container instance that connects to the PostgreSQL server.
 [`18-deploy-db-backed-container.sh`](../scripts/18-deploy-db-backed-container.sh)
 
 **Screenshot references:**  
-- ![Deploy container to Azure Container Instances](../images/80-deploy-db-container.png)  
-- ![Container Overview in Azure Portal](../images/81-container-overview.png)
+- ![Validation Passed](../images/80-deploy-db-container.png)  
+- ![Validation Passed](../images/81-container-overview.png)
 
 This script:
 - Pulls the image from ACR  
@@ -101,9 +101,9 @@ Instead of embedding credentials in code, the container retrieves the database c
 [`19-inject-secret-from-keyvault-into-container.sh`](../scripts/19-inject-secret-from-keyvault-into-container.sh)
 
 **Screenshot references:**  
-- ![Inject Key Vault Secret into Container](../images/100.inject-the-secret-key-vault-into-container.png)  
-- ![Environment Variable DB_CONN](../images/94-container-env-vars.png)  
-- ![Container Logs Showing Flask Startup](../images/96-container-logs-flask.png)
+- ![Validation Passed](../images/84.inject-the-secret-key-vault-into-container.png)  
+- ![Validation Passed](../images/82-container-env-vars.png)  
+- ![Validation Passed](../images/83-container-logs-flask.png)
 
 Key command used:
 ```bash

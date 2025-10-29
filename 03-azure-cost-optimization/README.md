@@ -16,7 +16,7 @@ It explains how each architectural choice reduces operational cost while maintai
 
 ---
 
-## ⚙️ 2. VM Sizing and Type
+## 2. VM Sizing and Type
 | Setting | Value | Optimization Strategy |
 |----------|--------|-----------------------|
 | **VM Size** | `Standard_B1s` | Uses burstable CPU model — ideal for test and dev workloads. Pay for baseline, burst when needed. |

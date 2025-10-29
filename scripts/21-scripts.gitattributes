@@ -1,7 +1,0 @@
-# --- Azure Cloud Migration Project Language Overrides ---
-scripts/bash/*.sh linguist-language=Shell
-scripts/powershell/*.sh linguist-language=PowerShell
-scripts/python/*.sh linguist-language=Python
-scripts/docker/*.sh linguist-language=Dockerfile
-scripts/azcli/*.sh linguist-language=Shell
-scripts/bicep/*.sh linguist-language=Bicep

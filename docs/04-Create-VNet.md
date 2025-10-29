@@ -1,72 +1,65 @@
-Create a Virtual Network (VNet)
+# 04 – Create a Virtual Network (VNet)
 
-Objective
+## Objective
+Create a Virtual Network (VNet) that provides a secure, isolated environment for my virtual machine (`vm-cli-01`).  
+A VNet acts like a private data center inside Azure — I control the IP ranges, subnets, and traffic rules.
 
-Create a Virtual Network (VNet) that provides a secure, isolated environment for my virtual machine (vm-cli-01).
-A VNet acts like my private data center inside Azure — control its IP ranges, subnets, and traffic rules.
+---
 
-Option 1 — Using Azure Portal (GUI)
-1️Navigate to Virtual Networks
+## Option 1 – Using the Azure Portal (GUI)
 
-Go to the Azure Portal
+### 1) Navigate to **Virtual networks**
+- Open the **Azure Portal**
+- Search for **Virtual networks**
+- Click **Create**
 
-Search for Virtual networks
+### 2) Basics
+| Setting | Value |
+|---|---|
+| **Subscription** | Azure subscription 1 |
+| **Resource Group** | `vm-cli-rg` |
+| **Name** | `vm-network` |
+| **Region** | **East US 2** |
 
-1.Click Create
+![Create VNet – Basics](../images/14.Creating-virtual-network.png)
 
-2️.Fill in the “Basics” tab
-Setting	Value
-Subscription	Azure subscription 1
-Resource Group	vm-cli-rg
-Name	vm-network
-Region	East US 2
+### 3) IP Addresses
+| Setting | Value |
+|---|---|
+| **IPv4 address space** | `10.0.0.0/16` |
+| **Subnet name** | `default` |
+| **Subnet range** | `10.0.0.0/24` |
 
-![Verify Backup Vault and Backup Job](../images/14.Creating-virtual-network.png)
+> [!WARNING]  
+> If you see an overlapping address space warning, choose a unique CIDR (for example `10.1.0.0/16`) so it won’t conflict with on-prem or other VNets.
 
-3️.Configure the “IP Addresses” tab
-Setting	Value
-IPv4 Address Space	10.0.0.0/16
-Subnet Name	default
-Subnet Range	10.0.0.0/24
+![VNet – IP Addresses](../images/15.IP-addresses.png)
 
-⚠️ If you see a message about overlapping address spaces, use a unique range (e.g., 10.1.0.0/16).
+### 4) Security & Tags
+Leave the following **unchecked** for this basic setup (you can add them later if needed):
+- Virtual network encryption  
+- Azure Bastion  
+- Azure Firewall  
+- Azure DDoS Protection
 
-![Verify Backup Vault and Backup Job](../images/15.IP-addresses.png)
+### 5) Review + Create
+- Click **Review + create** → verify **Validation passed**  
+- Click **Create**
 
+![Validation Passed](../images/16.Validation-passed.png)
 
-4️.Security & Tags
+### 6) Deployment Complete
+When deployment finishes, you’ll see the confirmation page.
 
-Leave the following unchecked:
+![Deployment Complete](../images/17.Deployment_is_complete.png)
 
-Virtual network encryption
+---
 
-Azure Bastion
+## Option 2 – Using Azure CLI (Cloud Shell or Local)
 
-Azure Firewall
+Run the following commands to create the same VNet and default subnet via CLI:
 
-Azure DDoS Protection
-
-These are optional paid services and not needed for basic setups.
-
-5. Review + Create
-
-Click Review + Create → ensure validation passes 
-Then click Create.
-
-![Verify Backup Vault and Backup Job](../images/16.Validation-passed.png)
-
-
-6️.Deployment Complete
-
-Once deployment finishes, you’ll see the confirmation page.
-
-![Verify Backup Vault and Backup Job](../images/17.Deployment_is_complete.png)
-
-
-Option 2 — Using Azure CLI (Cloud Shell or Local)
-
-If you prefer scripting or automation, use the following command:
-
+```bash
 az network vnet create \
   --name vm-network \
   --resource-group vm-cli-rg \
@@ -74,6 +67,7 @@ az network vnet create \
   --address-prefix 10.0.0.0/16 \
   --subnet-name default \
   --subnet-prefix 10.0.0.0/24
+```
 
 Verify via CLI
 az network vnet list --resource-group vm-cli-rg --output table

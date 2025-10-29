@@ -1,13 +1,15 @@
 # 10 - Containerization and Azure PaaS Deployment
 
 ## Overview
-In this part of my case study, I show how I built, containerized, and deployed a simple web application to **Azure Container Instances (ACI)** using **Azure Container Registry (ACR)** as the private image source.
+In this part of my case study, I demonstrate how I built, containerized, and deployed a lightweight Flask web application using **Azure Container Registry (ACR)** and **Azure Container Instances (ACI)**.  
+This process highlights the end-to-end workflow of building, storing, and running containerized applications in Azure.
 
-This process demonstrates my ability to:
-1. Containerize a working app
-2. Push and manage container images in Azure
-3. Run the container in a fully managed Azure service
-4. Enable monitoring and alerting for operational visibility
+- Containerized the Flask application using Docker.  
+- Published the image to **Azure Container Registry (ACR)** for secure, private storage.  
+- Deployed the container to **Azure Container Instances (ACI)** for a fully managed runtime.  
+- Verified successful deployment using both the **Azure CLI** and the **Azure Portal**.  
+
+This exercise demonstrates how I apply **modern DevOps and PaaS practices** to transform traditional workloads into containerized, cloud-native solutions in Azure.
 
 ---
 

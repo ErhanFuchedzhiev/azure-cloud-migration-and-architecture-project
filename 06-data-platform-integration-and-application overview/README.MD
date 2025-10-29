@@ -33,10 +33,10 @@ Together, these components form the **technical foundation for cloud-native work
 ## Data Platform and Application Design Highlights
 
 - **Hybrid Connectivity:** All data and services use private networking or secured endpoints.  
-- **Decoupled Communication:** Event Grid ensures event-driven integration between workloads.  
+- **Event-Driven Communication:** Event Grid ensures event-driven integration between workloads.  
 - **Governed Access:** Key Vault and Role-Based Access Control (RBAC) secure sensitive data.  
 - **Application Observability:** Application Insights integrates with App Service and container workloads for telemetry, tracing, and proactive monitoring.  
-- **Cloud-Native Architecture Foundation:** Combines compute, data, and integration layers to deliver a fully managed, event-driven, and extensible Azure solution.
+- **Cloud Architecture Foundation:** Combines compute, data, and integration layers to deliver a fully managed, event-driven, and extensible Azure solution.
 
 ---
 

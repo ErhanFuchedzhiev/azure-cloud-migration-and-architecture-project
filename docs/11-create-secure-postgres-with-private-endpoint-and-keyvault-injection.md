@@ -33,7 +33,8 @@ The PostgreSQL Flexible Server provides a fully managed, scalable relational dat
 [`15-create-postgres-flexibleserver.sh`](../scripts/15-create-postgres-flexibleserver.sh)
 
 **Screenshot reference:**  
-![Validation Passed](../images/74-create-postgres-flexibleserver.png)
+![Validation Passed](../images/74.create-postgresql-flexible-server.png)
+![Validation Passed](../images/75.postgresql-flexible-server-azure.png)
 
 This script provisions the PostgreSQL server with admin credentials, a demo database, and basic network configuration.
 
@@ -49,6 +50,9 @@ To avoid hardcoding connection strings, the application retrieves its credential
 **Screenshot references:**  
 - ![Validation Passed](../images/75-create-keyvault.png)  
 - ![Validation Passed](../images/76-store-dbconnectionstring.png)
+- ![Validation Passed](../images/77.create-key-vault.png)  
+- ![Validation Passed](../images/76.verify-connection-string-azure-key-vault.png)
+- ![Validation Passed](../images/78.verify-azure-key-vault-in-azure.png)
 
 The script performs:
 1. Creation of a Key Vault resource  
@@ -65,8 +69,10 @@ The database is configured to **allow access only from trusted Azure resources**
 [`17-secure-postgres-network.sh`](../scripts/17-secure-postgres-network.sh)
 
 **Screenshot references:**  
-- ![Validation Passed](../images/77-disable-public-access.png)  
-- ![Validation Passed](../images/78-create-private-endpoint.png)
+- ![Validation Passed](../images/79.create-vnet-subnet.png)  
+- ![Validation Passed](../images/80.create-private-endpoint.png)
+- ![Validation Passed](../images/81.verify-private-endpoint-firewall-rules.png)  
+- ![Validation Passed](../images/81.2.verify-private-endpoint-firwall-rules.png)
 
 This step ensures that the database cannot be accessed publicly and that only the containerized app inside Azure can communicate with it.
 
@@ -81,8 +87,8 @@ Now we deploy it as a container instance that connects to the PostgreSQL server.
 [`18-deploy-db-backed-container.sh`](../scripts/18-deploy-db-backed-container.sh)
 
 **Screenshot references:**  
-- ![Validation Passed](../images/80-deploy-db-container.png)  
-- ![Validation Passed](../images/81-container-overview.png)
+- ![Validation Passed](../images/83-container-logs-flask.png)
+- ![Validation Passed](../images/85.verify-IP-browser.png)  
 
 This script:
 - Pulls the image from ACR  
@@ -103,7 +109,6 @@ Instead of embedding credentials in code, the container retrieves the database c
 **Screenshot references:**  
 - ![Validation Passed](../images/84.inject-the-secret-key-vault-into-container.png)  
 - ![Validation Passed](../images/82-container-env-vars.png)  
-- ![Validation Passed](../images/83-container-logs-flask.png)
 
 Key command used:
 ```bash

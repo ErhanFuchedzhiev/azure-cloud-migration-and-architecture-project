@@ -1,4 +1,4 @@
-# Configure Role-Based Access Control (RBAC) for vm-cli-rg
+# 07 - Configure Role-Based Access Control (RBAC) for vm-cli-rg
 
 ## Objective
 
